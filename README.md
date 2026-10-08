@@ -1,2 +1,2 @@
 # Gold_Singals_bot
-XUA_BOT
+XAU_BOT
