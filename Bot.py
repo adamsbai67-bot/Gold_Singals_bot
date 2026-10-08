@@ -1,18 +1,15 @@
 import os
 import time
 import requests
-from datetime import datetime
-
+from datetime import 
 # ═══════════════════════════════════════════
-# CONFIGURATION — بدل هاد القيم
-# ═══════════════════════════════════════════
-TELEGRAM_TOKEN = "هنا_حط_التوكن_ديالك"
-TELEGRAM_CHAT_ID = "هنا_حط_الـ_chat_id"
-TWELVEDATA_KEY = "هنا_حط_الـ_api_key"
+TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN", "")
+TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "")
+TWELVEDATA_KEY = os.environ.get("TWELVEDATA_KEY", "")
 
-SYMBOL = "XAU/USD"       # الذهب
-INTERVAL = "5min"        # فريم 5 دقائق
-CHECK_EVERY = 300        # كل 5 دقائق
+SYMBOL = "XAU/USD"       # XAU
+INTERVAL = "5min"        # FRAME 5 MIN
+CHECK_EVERY = 300        # EVERY 5 MIN
 
 # ═══════════════════════════════════════════
 # TELEGRAM
